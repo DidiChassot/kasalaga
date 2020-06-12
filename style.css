@@ -6758,7 +6758,12 @@ body.home.page #secondary  {
 /* ==================================*/
 .site-header {
   background-color: #fff;
+  background-image: url("img/header-bg_logo.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
   position: relative;
+  height: 130px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
