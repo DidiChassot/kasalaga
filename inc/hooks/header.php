@@ -240,42 +240,7 @@ if ( ! function_exists( 'charitize_header' ) ) :
                 <header id="masthead" class="site-header" role="banner">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-4">
-                                <div class="site-branding">
-                                    <?php if (version_compare($wp_version, '4.5', '<')) {
-                                        if ( isset($charitize_customizer_all_values['charitize-logo']) && !empty($charitize_customizer_all_values['charitize-logo'])) :
-                                            echo '<div class="site-title">';?>
-                                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                                                <img class="header-logo" src="<?php echo esc_url($charitize_customizer_all_values['charitize-logo']); ?>" alt="<?php bloginfo( 'name' );?>">
-                                            </a>
-                                            <?php echo '</div>';?>
-                                        <?php else :
-                                            echo '<div class="site-title">';?>
-                                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                                                <?php if ( 1 == $charitize_customizer_all_values['charitize-enable-title'] ) :
-                                                    bloginfo( 'name' );
-                                                endif;?>
-                                            </a>
-                                            <?php if ( 1 == $charitize_customizer_all_values['charitize-enable-tagline'] ) :
-                                                echo '<p class="site-description">'. esc_html (get_bloginfo('description' )).'</p>';
-                                            endif; ?>
-                                            <?php echo '</div>';
-                                        endif;
-                                    } else {
-                                        charitize_the_custom_logo();
-                                        if ( is_front_page() && is_home() ) : ?>
-                                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                                        <?php else : ?>
-                                            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                                        <?php endif;
-                                        $description = get_bloginfo( 'description', 'display' );
-                                        if ( $description || is_customize_preview() ) : ?>
-                                            <h2 class="site-description"><?php echo esc_html($description ); ?></h2>
-                                        <?php endif;
-                                    }?>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-8">
+                            <div>
                                 <div class="row">
                                     <div class="nav-holder">
                                         <div class="col-xs-9 mb-device go-left">
@@ -292,11 +257,6 @@ if ( ! function_exists( 'charitize_header' ) ) :
                                                 </nav><!-- #site-navigation -->
                                             </div><!-- site-header-menu -->
                                         </div>
-                                         <div class="col-xs-3 mb-device go-right">
-                                                <span class="header-btn">
-                                                    <a href="<?php echo esc_url($charitize_customizer_all_values['charitize-donate-link'] );?>" class="button"><?php echo esc_html($charitize_customizer_all_values['charitize-donate-button-text'] );?></a>
-                                                </span>
-                                            </div>
                                     </div>
                                 </div>
                             </div>

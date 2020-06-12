@@ -106,6 +106,13 @@ if ( ! function_exists( 'charitize_footer' ) ) :
     ****************************************** -->
         <footer id="colophon" class="wrapper evision-wrapper site-footer" role="contentinfo">
             <div class="container">
+                
+                        
+                                         <div class="col-xs-3 mb-device go-right">
+                                                <span class="header-btn">
+                                                    <a href="<?php echo esc_url($charitize_customizer_all_values['charitize-donate-link'] );?>" class="button"><?php echo esc_html($charitize_customizer_all_values['charitize-donate-button-text'] );?></a>
+                                                </span>
+                                            </div>
                 <nav class="footer-nav main-navigation">
                     <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'primary-menu', 'fallback_cb' => false, ) ); ?>
                 </nav>
