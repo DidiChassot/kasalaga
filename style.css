@@ -6763,9 +6763,13 @@ body.home.page #secondary  {
   background-position: center top;
   background-size: cover;
   position: relative;
-  height: 130px;
+  height: 140px;
   padding-bottom: 20px;
   padding-top: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Kohinoor Devanagari", serif;
 }
 
 .site-header:before, .site-header:after {
