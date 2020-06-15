@@ -276,7 +276,7 @@ html {
 }
 
 body {
-  background: #f7f7f7;
+  /*background: #f7f7f7;*/
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
