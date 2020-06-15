@@ -245,6 +245,13 @@ if ( ! function_exists( 'charitize_header' ) ) :
                                     <div class="nav-holder">
                                         <div class="">
                                             <button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="fa fa-bars"></span><?php __('MENU','charitize') ?></button>
+                                            
+                                <div class="logo_lien">
+                                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                        <img src="<?php echo get_bloginfo('template_url') ?>/img/logo2.png"/>
+                                    </a>
+                                            
+                                </div>
                                             <div id="site-header-menu" class="site-header-menu">
                                                 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'charitize' ); ?>">
                                                     <?php
