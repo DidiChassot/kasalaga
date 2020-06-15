@@ -266,38 +266,10 @@ if ( ! function_exists( 'charitize_header' ) ) :
                 <header id="fixedhead" class="site-header" role="banner">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-4">
-                                <div class="site-branding">
-                                    <?php if (version_compare($wp_version, '4.5', '<')) {
-                                        if ( isset($charitize_customizer_all_values['charitize-logo']) && !empty($charitize_customizer_all_values['charitize-logo'])) :
-                                            echo '<div class="site-title">';?>
-                                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                                                <img class="header-logo" src="<?php echo esc_url($charitize_customizer_all_values['charitize-logo']); ?>" alt="<?php bloginfo( 'name' );?>">
-                                            </a>
-                                            <?php echo '</div>';?>
-                                        <?php else :
-                                            echo '<div class="site-title">';?>
-                                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                                                <?php if ( 1 == $charitize_customizer_all_values['charitize-enable-title'] ) :
-                                                    bloginfo( 'name' );
-                                                endif;?>
-                                            </a>
-                                            <?php echo '</div>';
-                                        endif;
-                                    } else {
-                                        charitize_the_custom_logo();
-                                        if ( is_front_page() && is_home() ) : ?>
-                                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                                        <?php else : ?>
-                                            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                                        <?php endif;
-                                    }?>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-8">
+                            <div class="">
                                 <div class="row">
                                     <div class="nav-holder">
-                                        <div class="col-xs-9 mb-device go-left">
+                                        <div class="">
                                             <button id="menu-toggle-fixed" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="fa fa-bars"></span><?php __('MENU','charitize') ?></button>
                                             <div id="site-header-menu-fixed" class="site-header-menu">
                                                 <nav id="site-navigation-fixed" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'charitize' ); ?>">
@@ -310,11 +282,6 @@ if ( ! function_exists( 'charitize_header' ) ) :
                                                     ?>
                                                 </nav><!-- #site-navigation -->
                                             </div><!-- site-header-menu -->
-                                        </div>
-                                        <div class="col-xs-3 mb-device go-right">
-                                            <span class="header-btn">
-                                                <a href="<?php echo esc_url($charitize_customizer_all_values['charitize-donate-link'] );?>" class="button"><?php echo esc_html($charitize_customizer_all_values['charitize-donate-button-text'] );?></a>
-                                            </span>
                                         </div>
                                     </div>
                                 </div>
