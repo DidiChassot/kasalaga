@@ -3999,7 +3999,7 @@ dt {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1120px;
     width: 100%;
   }
 }
@@ -6758,18 +6758,19 @@ body.home.page #secondary  {
 /* ==================================*/
 .site-header {
   background-color: #fff;
-  background-image: url("img/header-bg_logo.png");
+  background-image: url("img/header-bg.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   background-size: cover;
   position: relative;
-  height: 140px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  font-size: 18px;
+  /*height: 140px;*/
+  padding-bottom: 1%;
+  padding-top: 1%;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Kohinoor Devanagari", serif;
+  text-align: center;
 }
 
 .site-header:before, .site-header:after {
@@ -6909,7 +6910,7 @@ body.home.page #secondary  {
   position: relative;
   margin-bottom: 5px;
   margin-top: 5px;
-  text-align: right;
+  text-align: ;
 }
 
 .nav-holder:before, .nav-holder:after {
@@ -6964,6 +6965,14 @@ body.home.page #secondary  {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
+    
+  background-image: url("img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  /*min-height: 183px;*/
+  padding-top:3%;
+  padding-bottom:3%;
 }
 
 .site-header-menu.toggled-on,
@@ -6980,7 +6989,8 @@ body.home.page #secondary  {
 
 .main-navigation {
   background: none repeat scroll 0 0 #565656;
-  text-align: left;
+  
+  /*text-align: left;*/
 }
 
 .site-footer .main-navigation {
@@ -7005,6 +7015,16 @@ body.home.page #secondary  {
 .main-navigation li {
   border-top: 1px solid #d1d1d1;
   position: relative;
+  /*width: 200px;*/
+  margin-right: 20px;
+}
+
+.main-navigation li:nth-child(2) {
+  margin-right: 200px;
+}
+
+.site-header .main-navigation li.current_page_item a {
+  border-bottom: 2px solid #e90000;
 }
 
 .main-navigation a,
@@ -7013,7 +7033,7 @@ body.home.page #secondary  {
   display: block;
   line-height: 1.3125;
   outline-offset: -1px;
-  padding: 14px 18px 15px;
+  margin: 14px 18px 15px;
 }
 
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active,
@@ -7187,7 +7207,7 @@ body.home.page #secondary  {
   .main-navigation a:visited {
     color: #332e2b;
     outline-offset: -8px;
-    padding: 0.65625em 1em;
+    margin: 0.65625em 1em;
     white-space: nowrap;
     position: relative;
     border-bottom: none;

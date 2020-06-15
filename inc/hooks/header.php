@@ -243,7 +243,7 @@ if ( ! function_exists( 'charitize_header' ) ) :
                             <div>
                                 <div class="row">
                                     <div class="nav-holder">
-                                        <div class="col-xs-9 mb-device go-left">
+                                        <div class="">
                                             <button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="fa fa-bars"></span><?php __('MENU','charitize') ?></button>
                                             <div id="site-header-menu" class="site-header-menu">
                                                 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'charitize' ); ?>">
