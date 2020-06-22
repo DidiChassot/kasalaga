@@ -5698,7 +5698,7 @@ article .comment-list,
 .page article.hentry li,
 .single article.hentry li,
 .woocommerce article.hentry li, .woocommerce .site-main li {
-  border-top: 1px solid #ccc;
+  /*border-top: 1px solid #ccc;*/
 }
 
 .widget li:first-child, .blog article.hentry li:first-child,
