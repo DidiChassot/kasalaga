@@ -7121,6 +7121,10 @@ body.home.page #secondary  {
   border-bottom: 2px solid #e90000;
 }
 
+.site-header .main-navigation li.current_page_item li a {
+  border-bottom: none;
+}
+
 .main-navigation a,
 .main-navigation a:visited {
   color: white;
