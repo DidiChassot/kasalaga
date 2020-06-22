@@ -377,7 +377,7 @@ blockquote {
   margin: 0;
   font-style: italic;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 
 address {
@@ -3999,7 +3999,7 @@ dt {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1120px;
+    max-width: 1200px;
     width: 100%;
   }
 }
@@ -6672,13 +6672,94 @@ article .comment-list,
 
 body.home .site-content {
   max-width: auto;
-  padding: 0;
+  padding-top: 0;
+}
+
+.home_banner {
+  width: 100%;
+}
+
+#home_content {
+  color: #3d281a;
+  font-size: 40px;
+  margin-top: -8% ;
+  font-weight: bold;
+  line-height: normal;
+}
+
+#home_content p {
+  margin-bottom: 40px;
 }
 
 body.home.blog .site-content {
   max-width: 1200px;
   padding-top: 40px;
 }
+
+.home_img {
+  width: 30%;
+  /*float: left;*/
+}
+
+#sitation {
+  width: 63%;
+  float: right;
+  font-size: 0.6em;
+}
+
+#sitation blockquote {
+  margin-top:6%; 
+  border:none;
+  color: #3d281a;
+  font-style: normal
+}
+
+#sitation span{
+  display: block;
+  text-align: right;
+  font-weight: normal;
+  color: #777;
+  font-style: italic;
+
+}
+
+#sitation blockquote:nth-child(1) i {
+  border-bottom: 2px solid #f1651f;
+}
+
+#sitation blockquote:nth-child(2) i {
+  border-bottom: 2px solid #ffcc1c;
+}
+
+#sitation blockquote:nth-child(3) i {
+  border-bottom: 2px solid #f89f17;
+}
+
+@media screen and (max-width: 767px) {
+   
+  #home_content {
+    margin-top: -11% ;
+    font-size: 36px;
+  }
+  
+  #home_content p {
+    margin-bottom: 10px;
+  }
+
+  #sitation {
+    width: 100%;
+    float: none;
+    font-size: 0.6em;
+  }
+  
+  .home_img {
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+    /*float: left;*/
+  }
+}
+/*--*/
 
 .site-content #primary,
 .site-content #secondary {
@@ -6830,6 +6911,10 @@ body.home.page #secondary  {
   .site-header .header-btn {
     float: right;
   }
+  body.home .site-content {
+  max-width: auto;
+  padding: 0;
+}
 }
 
 @media screen and (max-width: 1199px) {
@@ -7983,22 +8068,43 @@ body.home.page #secondary  {
 }
 
 .site-footer {
-  background-color: #313131;
-  text-align: center;
+  background-color: #3f291c;
+  background-image:url("img/footer_logo.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*text-align: center;*/
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
+  height: 150px;
+  font-size: 22px;
+  line-height: normal;
+  margin-top: 60px;
 }
 
 .site-footer .copyright {
   color: #bababa;
-  display: inline-block;
+  display: block;
   margin-bottom: 15px;
+  float: left;
+  background-image: url("img/footer_map.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding:20px 0 15px 60px;
 }
 
 .site-footer .site-info {
   color: #bababa;
   display: inline-block;
-  text-align: center;
+  padding:20px 0 15px 60px;
+}
+
+@media screen and (max-width: 830px) {
+  .site-footer .site-info {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .site-footer .site-info a {
@@ -8007,6 +8113,27 @@ body.home.page #secondary  {
 
 .site-footer .site-info a:hover {
   color: #bababa;
+}
+
+.fb-like {
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+#don a{
+  display: block;
+  width: 150px;
+  height: 120px;
+  background-image: url("img/don.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: crosshair;
+  float: right;
+  margin-top: -216px;
+}
+#don a:hover {
+  cursor: help;
+  background-image: url("img/don_hover.png");
 }
 
 /* ==================================*/
@@ -8150,3 +8277,7 @@ img.desaturate {
 
 /*==== HAPPY STYLING!!! ===*/
 /*=========================*/
+
+.clear {
+  clear: both;
+}

@@ -235,7 +235,9 @@ if ( ! function_exists( 'charitize_header' ) ) :
     function charitize_header() {
         global $charitize_customizer_all_values;
         global $wp_version;
-        ?>
+        ?><div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0" nonce="tNE7A5ZI"></script>
+
             <div class="wrapper header-wrapper">
                 <header id="masthead" class="site-header" role="banner">
                     <div class="container">

@@ -107,35 +107,26 @@ if ( ! function_exists( 'charitize_footer' ) ) :
         <footer id="colophon" class="wrapper evision-wrapper site-footer" role="contentinfo">
             <div class="container">
                 
-                        
-                                         <div class="col-xs-3 mb-device go-right">
-                                                <span class="header-btn">
-                                                    <a href="<?php echo esc_url($charitize_customizer_all_values['charitize-donate-link'] );?>" class="button"><?php echo esc_html($charitize_customizer_all_values['charitize-donate-button-text'] );?></a>
-                                                </span>
-                                            </div>
-                <nav class="footer-nav main-navigation">
-                    <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'primary-menu', 'fallback_cb' => false, ) ); ?>
-                </nav>
                 <div class="footer-bottom">
                     <span class="copyright">
-                        <?php
-                        if(isset($charitize_customizer_all_values['charitize-copyright-text'])){
-                            echo wp_kses_post( $charitize_customizer_all_values['charitize-copyright-text'] );
-                        }
-                        ?>
+                        L’Association des Amis de Kasalaga<br>
+Case postale 102<br>
+1726 Posieux
                     </span>
                     <?php
                         if( 1 == $charitize_customizer_all_values['charitize-enable-theme-name']){
                             ?>
                         <span class="site-info">
-                            <a href="<?php echo esc_url( 'https://wordpress.org/'); ?>"><?php printf( esc_html__( 'Proudly powered by %s.', 'charitize' ), 'WordPress' ); ?></a>
-                            <span class="sep"> | </span>
-                            <?php printf( esc_html__( 'Theme: %1$s by %2$s', 'charitize' ), 'Charitize', '<a href="http://evisionthemes.com/" rel="designer">eVisionThemes</a>' ); ?>
+                          mail: kasalagafriends@bluewin.ch
                         </span><!-- .site-info -->
                     <?php
                         }
                     ?>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="false"></div>
                 </div>
+            </div>
+            <div id="don">
+              <a href="nous-soutenir">&nbsp;</a>
             </div>
         </footer><!-- #colophon -->
         <!-- *****************************************
@@ -160,7 +151,7 @@ if ( ! function_exists( 'charitize_page_end' ) ) :
         global $charitize_customizer_all_values;
         if(1 == $charitize_customizer_all_values['charitize-enable-back-to-top']) {
         ?>
-            <a id="gotop" class="evision-back-to-top" href="#top"><i class="fa fa-angle-up"></i></a>
+            <!--<a id="gotop" class="evision-back-to-top" href="#top"><i class="fa fa-angle-up"></i></a>-->
         <?php
         }
         ?>
