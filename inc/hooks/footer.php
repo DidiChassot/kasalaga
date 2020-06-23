@@ -111,7 +111,7 @@ if ( ! function_exists( 'charitize_footer' ) ) :
                     <span class="copyright">
                         L’Association des Amis de Kasalaga<br>
 Case postale 102<br>
-1726 Posieux
+1725 Posieux
                     </span>
                     <?php
                         if( 1 == $charitize_customizer_all_values['charitize-enable-theme-name']){
