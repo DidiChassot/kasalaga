@@ -6670,6 +6670,12 @@ article .comment-list,
   clear: both;
 }
 
+.entry-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
 body.home .site-content {
   max-width: auto;
   padding-top: 0;
@@ -7581,6 +7587,10 @@ body.home.page #secondary  {
 }
 
 /* ==================================*/
+.banner {
+  background-color: #412c1f;
+}
+
 .wrapper-slider {
   background-color: #313131;
   overflow: hidden;
@@ -8006,6 +8016,10 @@ body.home.page #secondary  {
   text-transform: inherit;
   font-weight: 500;
   margin-bottom: 5px;
+}
+
+.entry-title {
+  font-size: 60px;
 }
 
 .entry-title a {

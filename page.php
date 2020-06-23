@@ -13,26 +13,11 @@
  */
 
 get_header(); ?>
-<div class="wrapper page-inner-title">
-	<div class="container">
-	    <div class="row">
-	        <div class="col-md-12 col-sm-12 col-xs-12">
-				<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</header><!-- .entry-header -->
-	        </div>
-	    </div>
-	</div>
+<div class="banner">
+	<?php the_post_thumbnail(); ?>
 </div>
-<?php 
-/**
- * charitize_action_after_header hook
- * @since charitize 1.0.0
- *
- * @hooked null
- */
-do_action( 'charitize_action_after_header' );
-?>
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
 <section class="wrapper wrap-content">
 	<div class= "site-content">
 		<div id="primary" class="content-area">
