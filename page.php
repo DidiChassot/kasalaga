@@ -16,8 +16,12 @@ get_header(); ?>
 <div class="banner">
 	<?php the_post_thumbnail(); ?>
 </div>
-	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<h1 class="entry-title">
 
+		<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+  <text x="10" y="75"><?php the_title( '', '' ); ?></text>
+</svg>
+</h1>
 <section class="wrapper wrap-content">
 	<div class= "site-content">
 		<div id="primary" class="content-area">

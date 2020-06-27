@@ -114,7 +114,7 @@ if( ! function_exists( 'charitize_wp_head' ) ) :
         if( !empty($charitize_font_family_title_option) ){
         ?> 
             h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-                font-family: "<?php echo esc_attr( $charitize_font_family_title_option ); ?>";/*"Lato"*/
+                /*font-family: "<?php echo esc_attr( $charitize_font_family_title_option ); ?>";/*"Lato"*/*/
             }
         <?php
         } 
