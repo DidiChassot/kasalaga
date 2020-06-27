@@ -16,9 +16,10 @@ get_header(); ?>
 <div class="banner">
 	<?php the_post_thumbnail(); ?>
 </div>
+<div id="content">
 	<h1 class="entry-title">
 
-		<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+		<svg xmlns="http://www.w3.org/2000/svg" width="400" height="">
   <text x="10" y="75"><?php the_title( '', '' ); ?></text>
 </svg>
 </h1>
@@ -46,5 +47,6 @@ get_header(); ?>
 		?>
 	</div>
 </section>
+</div>
 <?php
 get_footer();

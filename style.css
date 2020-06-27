@@ -944,8 +944,8 @@ dt {
 .woocommerce article.hentry, .woocommerce .site-main {
   margin: 0;
   margin-bottom: 2em;
-  background: #fff;
-  border: 1px solid #e1e1e1;
+  /*background: #fff;*/
+  /*border: 1px solid #e1e1e1;*/
   padding: 15px;
 }
 
@@ -6665,7 +6665,7 @@ article .comment-list,
 *5.0 Content
 */
 .site-content {
-  padding-top: 40px;
+  padding-top: 0px;
   padding-bottom: 40px;
   padding-left: 15px;
   padding-right: 15px;
@@ -6673,6 +6673,7 @@ article .comment-list,
   margin-right: auto;
   max-width: 1200px;
   width: 100%;
+  margin-top: -70px;
 }
 
 .site-content:before, .site-content:after {
@@ -6780,7 +6781,12 @@ body.home.blog .site-content {
   }
 }
 /*--*/
-
+#content {
+  background-image: url("img/bg_page3.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
 .site-content #primary,
 .site-content #secondary {
   float: left;
@@ -6802,8 +6808,8 @@ body.home.blog .site-content {
 /*sidebar postion options*/
 #primary {
   /*right*/
-  width: 70%;
-  padding-right: 5%;
+  /*width: 70%;*/
+  /*padding-right: 5%;*/
   /*left*/
   /*none*/
 }
@@ -8036,7 +8042,7 @@ body.home.page #secondary  {
 
 .entry-title {
   font-size: 96px;
-  margin-top: -70px;
+  margin-top: -60px;
 }
 
 .entry-title a {
@@ -8053,7 +8059,7 @@ body.home.page #secondary  {
 .page-content,
 .entry-summary,
 .entry-content {
-  margin-top: 1em;
+  /*margin-top: 1em;*/
 }
 
 .entry-content .image-left {
