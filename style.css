@@ -7604,6 +7604,16 @@ body.home.page #secondary  {
     padding-left: 0;
     text-align: center;
   }
+  
+  .main-navigation ul ul.children {
+    display: block;
+    text-align: right;
+    color:#ccc;
+  }
+  .main-navigation ul ul.children li a {
+    
+    color:#ddd;
+  }
 }
 
 /* ==================================*/
