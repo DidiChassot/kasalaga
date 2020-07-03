@@ -20,7 +20,7 @@ get_header(); ?>
 	<h1 class="entry-title">
 
 		<svg xmlns="http://www.w3.org/2000/svg" width="400" height="">
-  <text x="10" y="75"><?php the_title( '', '' ); ?></text>
+  <text x="30" y="75"><?php the_title( '', '' ); ?></text>
 </svg>
 </h1>
 <section class="wrapper wrap-content">
