@@ -8198,6 +8198,13 @@ body.home.page #secondary  {
   background-image: url("img/don_hover.png");
 }
 
+@media screen and (max-width: 767px) {
+  .fb-like {
+    margin-top: -153px;
+    float: left;
+  }
+}
+
 /* ==================================*/
 .page-inner-title {
   background: no-repeat top center;
