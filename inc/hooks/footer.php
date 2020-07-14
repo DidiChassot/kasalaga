@@ -126,7 +126,7 @@ Case postale 102<br>
                 </div>
             </div>
             <div id="don">
-              <a href="nous-soutenir">&nbsp;</a>
+              <a href="http://www.kasalagafriends.org/nous-soutenir">&nbsp;</a>
             </div>
         </footer><!-- #colophon -->
         <!-- *****************************************
